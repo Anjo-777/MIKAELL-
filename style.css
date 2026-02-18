@@ -1,0 +1,84 @@
+body {
+  background: linear-gradient(135deg, #0f172a, #22c55e);
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.card {
+  background: white;
+  .card {
+    max-width: 420px;
+    width: 90%;
+  }
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+#foto-perfil {
+  border: 3px solid #22c55e;
+  transition: 0.3s;
+}
+
+#foto-perfil:hover {
+  scale: calc(1.1);
+  rotate: 90;
+}
+
+h1 {
+  color: #1e40af;
+}
+
+h2 {
+  color: #2563eb;
+}
+
+p {
+  color: #333;
+}
+
+button {
+  padding: 12px 24px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #1e40af;
+  transform: scale(1.05);
+}
+
+img {
+  margin-top: 20px;
+  border-radius: 12px;
+}
+.card {
+  animation: surgir 0.8s ease;
+}
+
+@keyframes surgir {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 22px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+}

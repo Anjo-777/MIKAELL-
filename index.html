@@ -1,89 +1,96 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minha Primeira Página</title>
+    <link href="./style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Minha Primeira Página</title>
-<link href="./style.css" rel="stylesheet" />
-</head>
+  <body>
+    <div class="root">
+      <div class="background-particles" id="particles-js"></div>
+      <div class="card">
+        <h1>Bem-vindo ao meu site</h1>
+        <p>
+          Meu nome é Mikaell e esse é meu primeiro site em HTML. Hospedado no
+          Github Pages em 17 de fevereiro de 2026!
+        </p>
 
-<body>
+        <h2>Sobre mim</h2>
+        <p>Estou aprendendo programação e quero criar meus próprios sites.</p>
 
-<div class="card">
-  <h1>Bem-vindo ao meu site</h1>
-  <p>Meu nome é Mikaell e esse é meu primeiro site em HTML. Hospedado no Github Pages em 17 de fevereiro de 2026!</p>
+        <h2>Contato</h2>
+        <button onclick="window.open('https://wa.me/559293924952', '_blank')">
+          <i class="fa-brands fa-whatsapp"></i>
+          WhatsApp
+        </button>
+        <img
+          id="foto-perfil"
+          src="https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/158915afb11feac20e9de6586043e582~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=14579&refresh_token=5b514681&x-expires=1771884000&x-signature=z%2Bju7B53dkYHWRwmHuVjjb%2Br8uQ%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2"
+        />
+        <div class="redes">
+          <a href="https://instagram.com" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
 
-  <h2>Sobre mim</h2>
-  <p>Estou aprendendo programação e quero criar meus próprios sites.</p>
+          <a href="https://github.com" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
 
-  <h2>Contato</h2>
-  <p>Meu WhatsApp: (92) 993924952</p>
-	
-<button onclick="window.open('https://wa.me/559293924952', '_blank')">
-  Me clique
-</button>
+          <a href="https://wa.me/5592993924952" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+        <p>Site criado por Mikaell - 2026</p>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
-<br><br>
-
-<img id="foto-perfil" src="https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/158915afb11feac20e9de6586043e582~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=14579&refresh_token=5b514681&x-expires=1771884000&x-signature=z%2Bju7B53dkYHWRwmHuVjjb%2Br8uQ%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2" style="width:150px; height:150px; border-radius:50%; object-fit:cover;">
-<div class="redes">
-  <a href="https://instagram.com" target="_blank">
-    <i class="fab fa-instagram"></i>
-  </a>
-
-  <a href="https://github.com" target="_blank">
-    <i class="fab fa-github"></i>
-  </a>
-
-  <a href="https://wa.me/5592993924952" target="_blank">
-    <i class="fab fa-whatsapp"></i>
-  </a>
-</div>
-<p>Site criado por Mikaell - 2026</p>
-</div>
-<div id="particles-js"></div>
-</body>
-<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-
-<script>
-particlesJS("particles-js", {
-  particles: {
-    number: { value: 100 },
-    color: { value: "#38bdf8" },
-    shape: { type: "circle" },
-    opacity: { value: 0.6 },
-    size: { value: 3 },
-    line_linked: {
-      enable: true,
-      distance: 150,
-      color: "#38bdf8",
-      opacity: 0.4,
-      width: 1
-    },
-    move: {
-      enable: true,
-      speed: 2,
-      out_mode: "out"
-    }
-  },
-  interactivity: {
-    detect_on: "canvas",
-    events: {
-      onhover: {
-        enable: true,
-        mode: "grab"
-      }
-    },
-    modes: {
-      grab: {
-        distance: 200,
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 100 },
+        color: { value: "#38bdf8" },
+        shape: { type: "circle" },
+        opacity: { value: 0.6 },
+        size: { value: 3 },
         line_linked: {
-          opacity: 1
-        }
-      }
-    }
-  },
-  retina_detect: true
-});
-</script>
+          enable: true,
+          distance: 150,
+          color: "#38bdf8",
+          opacity: 0.4,
+          width: 1,
+        },
+        move: {
+          enable: true,
+          speed: 2,
+          out_mode: "out",
+        },
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: {
+            enable: true,
+            mode: "grab",
+          },
+        },
+        modes: {
+          grab: {
+            distance: 200,
+            line_linked: {
+              opacity: 1,
+            },
+          },
+        },
+      },
+      retina_detect: true,
+    });
+  </script>
+</html>
